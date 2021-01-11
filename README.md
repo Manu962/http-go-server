@@ -1,5 +1,5 @@
-1) For the application url   http://localhost:8080 to return "Hello!" sue restful api which is implemented in java via sping boot.
-Code is in testmodel.java
+1) For the application url   http://localhost:8080 to return "Hello!" use restful api which is implemented in java via sping boot.
+////Code is in testmodel.java///
   
 
 3) I would add Environments- dev / uat/ perf instance in order to verify the right endpoint to the specific instance if in case
