@@ -59,8 +59,11 @@ implements HealthIndicator {
 
 }
 
-3) I would add ipaddress and hostname into helathz endpoints and will also add dev / uat/ perf instance in order to verify the right endpoint to the specific instance if in case
+3) I would add Environments- dev / uat/ perf instance in order to verify the right endpoint to the specific instance if in case
 there are more than 1 instances deployed to docker environments. example if dev - http://d-URL- or http://p(perf)(url).
+Team Contacts informtion.
+Cloud.json file - For pull request approvers.
+
 
 4) mkdir rundeployment
 cd rundeployment
@@ -101,8 +104,4 @@ Stages in CI/CD pipeline -
           
       Deploy- Udate prod release version and run prod tests.
       send nitification about prod deploy and test out URL.
-      
-        - 
-          
-        
-    
+
