@@ -60,7 +60,7 @@ implements HealthIndicator {
 }
 
 3) I would add ipaddress and hostname into helathz endpoints and will also add dev / uat/ perf instance in order to verify the right endpoint to the specific instance if in case
-there are more than 1 instances deployed to docker environments. example if dev - http://dlocalhost or http://p(perf)(url).
+there are more than 1 instances deployed to docker environments. example if dev - http://d-URL- or http://p(perf)(url).
 
 4) mkdir rundeployment
 cd rundeployment
