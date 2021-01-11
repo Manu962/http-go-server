@@ -5,7 +5,7 @@ import.java.util.Date;
 public class TestModel {
  Private String status;
  Private String version;
- Private Timestamo uptime;
+ Private Timestamp uptime;
  
  public TestModel(){
  
@@ -14,7 +14,7 @@ public class TestModel {
  
        this.status = status;
        this.version = version;
-       this.uptime =uptime;
+       this.uptime = uptime;
        }
        
        public String getstatus()          {
@@ -30,7 +30,7 @@ public class TestModel {
        
        
        public void setVersion(String version) {
-       this.status = status;
+       this.version = version;
        }
        
        public Timestamp getUptime() {
