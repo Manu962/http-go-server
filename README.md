@@ -24,20 +24,22 @@ CI/CD - I would choose specific CID/CD tool depending on ths type of application
         If it is a microservice which is on on-prem I would choose Jenkins for building artifacts.
         Can also use bitbucket for code commit and bamboo o deploy and verify urls in antiphony.
 Stages in CI/CD pipeline -
-   a) Build -
+     
+     "Build" 
+  
          - Check out the code using vascode / bash etc; 
          -Run static analysis and test it ( sonar)
          - Build artifacts
          -Build images
          -push the image to repos
          
-     Test -
+     "Test" -
          - Initialize the release under test
          -Confirm the green pass
          - Run some functional / security / vulnerability tests
          
      (remove the release under test)
-     Release -
+    " Release" -
           - pull the image of the rekease under test.
           -Tag the image as a specific release
           - Tag it as a latest image
@@ -45,6 +47,7 @@ Stages in CI/CD pipeline -
           -and then push the image to latest release
           -package it.
           
-      Deploy- Udate prod release version and run prod tests.
-      send nitification about prod deploy and test out URL.
+      "Deploy"
+      -Udate prod release version and run prod tests.
+      -send nitification about prod deploy and test out URL.
 
