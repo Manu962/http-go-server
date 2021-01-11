@@ -1,5 +1,62 @@
 1) For the application url   http://localhost:8080 to return "Hello!" sue restful api which is implemented in java via sping boot.
-2) The hello endpoint ["/"] is in HelloController, and health endpoints ["/healthz", "/info"], are in HealthController.
+   // Will be crated under src/main/java/Execute.java
+   code - import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@EnableAutoConfiguration
+public class Execute {
+
+    @RequestMapping("/")
+    String home() {
+        return "Hello!";
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(Execute.class, args);
+    }
+
+}
+ // if you open a web browser to localhost:8080, you should see the following output: "Hello!"
+ 
+2) The hello endpoint ["/"] is in src/main/java/HeakthController, and health endpoints ["/healthz",]
+public class HealthIndicator 
+    implements HealthIndicator {
+
+  private static final String URL 
+    = "http://localhost:8080/healthz ";
+
+  @Override
+  public Health health() {
+    // check if url is reachable
+    try (Socket socket = 
+        new Socket(new java.net.URL(URL).getHost(),80)) {
+    } //In this class, we return the status as ok if the URL is reachable, otherwise, we return the DOWN status with an error message.
+  @Override
+    public int getStatusCode(Status status) {
+   if (status == sucess ) {
+          return OK;
+        }
+        return status.build();
+        public class Test {
+
+    public static void main(String[] args) {
+        System.out.println(System.getProperty("java.runtime.version"));
+        import java.lang.management.RuntimeMXBean;
+ 
+public class GetJVMUpTime {
+	public static void main(String[] args) {
+		RuntimeMXBean runtimeBean = ManagementFactory.getRuntimeMXBean();
+ 
+		long upTime = runtimeBean.getUptime();
+		System.out.printf("Up Time = %d (ms)", upTime);
+	}
+    }
+}
+  }
+
+}
 
 3) I would add ipaddress and hostname into helathz endpoints and will also add dev / uat/ perf instance in order to verify the right endpoint to the specific instance if in case
 there are more than 1 instances deployed to docker environments. example if dev - http://dlocalhost or http://p(perf)(url).
