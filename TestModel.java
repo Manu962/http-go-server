@@ -10,7 +10,7 @@ public class TestModel {
  public TestModel(){
  
  }
- public TestModel (string status, String versio, Timestamp uptime){
+ public TestModel (string status, String version, Timestamp uptime){
  
        this.status = status;
        this.version = version;
